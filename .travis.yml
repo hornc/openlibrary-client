@@ -14,8 +14,8 @@ python:
 addons:
   apt:
     sources:
-    - sourceline 'deb http://ftp.indexdata.dk/ubuntu trusty main'
-      key_url http://ftp.indexdata.dk/debian/indexdata.asc
+    - sourceline: 'deb http://ftp.indexdata.dk/ubuntu trusty main'
+      key_url: http://ftp.indexdata.dk/debian/indexdata.asc
     packages:
     - yaz
 
