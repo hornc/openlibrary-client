@@ -4,7 +4,6 @@ os:
   - linux
 
 dist: trusty
-sudo: enabled
 
 python:
   - "2.7"
