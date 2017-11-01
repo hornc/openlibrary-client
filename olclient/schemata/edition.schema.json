@@ -29,6 +29,24 @@
       "type": "array",
       "items": { "$ref": "shared_definitions.json#author" }
     },
+    "contributions": {
+      "description": "More common but less detailed way of representing contributions on an Edition.",
+      "type": "array",
+      "items": "string"
+    },
+    "contributors": {
+      "description": "Less common but clearer way of representing contributions on an Edition.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [ "role", "name" ],
+        "properties": {
+          "role": { "type": "string" },
+          "name": { "type": "string" }
+        }
+      }
+    },
     "works": { "$ref": "#/definitions/works" },
     "identifiers": { "$ref": "#/definitions/identifiers" },
     "isbn_10": {
