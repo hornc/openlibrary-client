@@ -21,7 +21,7 @@ addons:
     - sourceline: 'deb http://ftp.indexdata.dk/ubuntu trusty main'
       key_url: http://ftp.indexdata.dk/debian/indexdata.asc
     - sourceline: 'deb http://ftp.indexdata.dk/ubuntu xenial main'
-      key_url: http://ftp.indexdata.dk/debian/indexdata.asc
+      key_url: http://ftp.indexdata.dk/debian/indexdata2.asc
     packages:
     - yaz
 
