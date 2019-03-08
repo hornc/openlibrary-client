@@ -1012,8 +1012,6 @@ class Results(object):
     class Document(object):
         """An aggregate OpenLibrary Work summarizing all Editions of a Book"""
 
-        OL = OpenLibrary()
-
         def __init__(self, key, title=u"", subtitle=None, subject=None,
                      author_name=u"", author_key=None, edition_key=None,
                      language="", publisher=None, publish_date=None,
@@ -1049,7 +1047,7 @@ class Results(object):
             # XXX test that during the zip, author_name and author_key
             # correspond to each other one-to-one, in order
             self.authors = [
-                self.OL.Author(olid=author_olid, name=name)
+                Openlibrary.Author(olid=author_olid, name=name)
                 for (name, author_olid) in
                 zip(author_name or [], author_key or [])]
             self.publishers = publisher
